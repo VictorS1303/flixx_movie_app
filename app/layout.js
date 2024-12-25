@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Navigation from '@/app/components/Navigation.jsx'
 import Footer from '@/app/components/Footer.jsx'
 
 const geistSans = Geist({
@@ -19,11 +20,19 @@ export const metadata = {
 
 export default function RootLayout({ children })
 {
+
+  const navigationLinks = [
+    { linkText: 'Home', href: '/' },
+    { linkText: 'Movies', href: '/movies' },
+    { linkText: 'TV Shows', href: '/tv_shows' },
+  ];
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white flex flex-col min-h-screen`}
       >
+
+        <Navigation navigationLinks={navigationLinks} />
         {/* Content Section */}
         <main className="flex-grow">
           {/* Replace this with your actual content */}
