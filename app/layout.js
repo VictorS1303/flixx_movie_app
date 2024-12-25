@@ -28,7 +28,7 @@ export default function RootLayout({ children })
         <Script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white flex flex-col min-h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-blue-950 flex flex-col min-h-screen`}
       >
 
         {/* Main Content */}
