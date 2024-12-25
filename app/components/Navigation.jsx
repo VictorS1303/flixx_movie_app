@@ -16,7 +16,7 @@ const Navigation = ({ children, navigationLinks = [] }) =>
                 {navigationLinks.map((item, index) => (
                     <li
                         key={index}
-                        className={`transition-text duration-150 ease-in ${currentPath !== item.href
+                        className={`uppercase text-bolder tracking-wide transition-text duration-150 ease-in ${currentPath !== item.href
                                 ? "hover:text-yellow-300"
                                 : ""
                             }`}
@@ -24,7 +24,7 @@ const Navigation = ({ children, navigationLinks = [] }) =>
                         <Link
                             href={item.href}
                             className={`block ${currentPath === item.href
-                                    ? "pointer-events-none"
+                                    ? "pointer-events-none text-yellow-300"
                                     : ""
                                 }`}
                             style={{ lineHeight: "1.2", padding: "0 2px" }}
