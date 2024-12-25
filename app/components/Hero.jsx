@@ -9,6 +9,7 @@ const Hero = ({ imgSrc }) =>
         <>
             <Section>
                 <div className="pt-24 pb-12">
+
                     {/* Background Image */}
                     <div>
                         <Image
