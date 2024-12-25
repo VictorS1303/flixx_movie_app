@@ -9,7 +9,7 @@ const Navigation = ({ children, navigationLinks = [] }) =>
     const currentPath = usePathname()
 
     return (
-        <nav className="flex justify-between px-36 py-8 bg-black">
+        <nav className="flex items-center justify-between px-36 py-8 bg-black">
             <Logo href="/" />
             <ul className="flex gap-12 text-xl max-md:flex-col max-md:text-center max-md:justify-center">
                 {navigationLinks.map((item, index) => (
