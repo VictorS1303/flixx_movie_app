@@ -21,3 +21,10 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+swiper-slide
+{
+  display: flex;
+  justify-content: center;
+}
+

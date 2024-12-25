@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from 'next/script'
 import "./globals.css";
 import MovieCard from '@/app/components/MovieCard.jsx';
 import Footer from '@/app/components/Footer.jsx';
@@ -20,13 +21,16 @@ export const metadata = {
 
 export default function RootLayout({ children })
 {
-  
+
   return (
     <html lang="en">
+      <head>
+        <Script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white flex flex-col min-h-screen`}
       >
-        
+
         {/* Main Content */}
         <main className="flex-1">
           {children}

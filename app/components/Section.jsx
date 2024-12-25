@@ -1,10 +1,10 @@
-const Section = ({children}) =>
+const Section = ({ children }) =>
 {
     return (
-        <section className="px-36 mt-8">
+        <section className="px-36">
             {children}
         </section>
     );
 }
- 
+
 export default Section;

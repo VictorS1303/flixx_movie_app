@@ -1,5 +1,5 @@
 import Navigation from '@/app/components/Navigation.jsx'
-import MovieCard from '@/app/components/MovieCard.jsx'
+import Hero from '@/app/components/Hero.jsx'
 
 export default function Home()
 {
@@ -14,6 +14,7 @@ export default function Home()
     <>
       {/* Navigation */}
       <Navigation navigationLinks={navigationLinks} />
+      <Hero></Hero>
     </>
   );
 }
