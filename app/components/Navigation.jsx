@@ -2,6 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
+import Logo from './Logo.jsx'
 
 const Navigation = ({ children, navigationLinks = [] }) =>
 {
@@ -9,9 +10,7 @@ const Navigation = ({ children, navigationLinks = [] }) =>
 
     return (
         <nav className="flex justify-between px-36 py-8 bg-black">
-            <Link href="/">
-                <h1 className="logo text-3xl uppercase">Flixx</h1>
-            </Link>
+            <Logo href="/" />
             <ul className="flex gap-12 text-xl max-md:flex-col max-md:text-center max-md:justify-center">
                 {navigationLinks.map((item, index) => (
                     <li
