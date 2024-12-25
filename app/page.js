@@ -1,5 +1,6 @@
 import Navigation from '@/app/components/Navigation.jsx'
 import Hero from '@/app/components/Hero.jsx'
+import SearchContainer from '@/app/components/SearchContainer.jsx'
 
 export default function Home()
 {
@@ -14,7 +15,8 @@ export default function Home()
     <>
       {/* Navigation */}
       <Navigation navigationLinks={navigationLinks} />
-      <Hero></Hero>
+      <Hero/>
+      <SearchContainer />
     </>
   );
 }
