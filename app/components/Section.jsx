@@ -1,7 +1,9 @@
-const Section = () =>
+const Section = ({children}) =>
 {
     return (
-        <section></section>
+        <section className="px-36 mt-8">
+            {children}
+        </section>
     );
 }
  
