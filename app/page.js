@@ -1,8 +1,8 @@
-import Button from './components/Button.jsx'
+import Footer from './components/Footer.jsx'
 
 export default function Home()
 {
   return (
-    <Button href="https://www.google.com" buttonText="Google" />
+    <Footer></Footer>
   );
 }
