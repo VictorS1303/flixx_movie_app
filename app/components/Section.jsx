@@ -1,7 +1,7 @@
 const Section = ({ children }) =>
 {
     return (
-        <section className="px-36">
+        <section className="block px-36 h-screen">
             {children}
         </section>
     );
