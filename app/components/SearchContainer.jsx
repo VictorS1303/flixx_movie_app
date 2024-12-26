@@ -1,10 +1,12 @@
-import SearchCategorySelect from './SearchCategorySelect'
+import SearchCategorySelect from './SearchCategorySelect.jsx'
+import SearchFilter from './SearchFilter.jsx'
 
 const SearchContainer = () =>
 {
     return (
-        <div className="flex justify-center text-white">
+        <div className="flex flex-col items-center gap-4 text-white">
             <SearchCategorySelect />
+            <SearchFilter />
         </div>
     );
 }
