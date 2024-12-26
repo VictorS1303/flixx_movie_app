@@ -1,6 +1,7 @@
 import Navigation from '@/app/components/Navigation.jsx'
 import Hero from '@/app/components/Hero.jsx'
 import SearchContainer from '@/app/components/SearchContainer.jsx'
+import PopularMovies from '@/app/components/PopularMovies.jsx'
 
 export default function Home()
 {
@@ -15,8 +16,9 @@ export default function Home()
     <>
       {/* Navigation */}
       <Navigation navigationLinks={navigationLinks} />
-      <Hero/>
+      <Hero />
       <SearchContainer />
+      <PopularMovies />
     </>
   );
 }
