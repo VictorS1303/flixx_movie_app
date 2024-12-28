@@ -31,7 +31,7 @@ const Navigation = ({ children, navigationLinks = [] }) =>
                     />
                 )}
             </button>
-            <nav className={`flex justify-between px-36 py-8 bg-black transition-all duration-300 ease-in max-md:h-full max-md:w-[100px] max-md:fixed max-md:flex-col 
+            <nav className={`fixed w-full z-50 -top-4 flex justify-between px-36 py-8 bg-black transition-all duration-300 ease-in max-md:h-full max-md:w-[100px] max-md:fixed max-md:flex-col 
                 ${toggleMobileMenuOpenState ? 'max-md:right-0' : 'max-md:-right-[350px]'}
 `}>
                 <div className="max-md:absolute max-md:bottom-4 max-md:left-1/2 max-md-transform max-md:-translate-x-1/2">

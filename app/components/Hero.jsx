@@ -21,7 +21,7 @@ const Hero = ({ imgSrc }) =>
     return (
         <>
             <Section>
-                <div className="pt-8 pb-12">
+                <div className="pt-36 pb-12">
                     {/* Background Image */}
                     <div>
                         <Image
