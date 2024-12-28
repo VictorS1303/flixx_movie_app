@@ -87,7 +87,7 @@ const ImageGallery = () =>
                                         <h3 className="rating"></h3>
                                         {Number.isInteger(movie.vote_average)
                                             ? movie.vote_average
-                                            : movie.vote_average.toFixed(1)}
+                                            : movie.vote_average.toFixed(1)}{' '}
                                         / 10
                                     </div>
                                 </MovieCard>
